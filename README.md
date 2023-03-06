@@ -1,2 +1,2 @@
 # Rhonda
-Rhonda the pest / CCTV / Water / Electricity report summariser
+The Pest / CCTV / Water / Electricity report summariser
