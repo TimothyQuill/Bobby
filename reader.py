@@ -22,7 +22,13 @@ def pdf2txt(pdf_path):
 
     return ret_data.getvalue()
 
+def synthesizer(responses):
+    keys = list(responses.keys())
+    report = ''
+    for key in keys:
+        report += '\n\n' + responses[key] + '\n\n'
 
-pdf_path = '/Users/tim/Downloads/report_examples/cctv_report_1.pdf'
-txt = pdf2txt(pdf_path)
-print(txt)
+    report += 'The above document was generated using ChatGPT, so some ' \
+              'information may be factually inaccurate or incorrect.'
+
+    return report
